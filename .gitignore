@@ -9,7 +9,8 @@
 /bower_components
 
 # misc
-*/**/*.swp
+**/.DS_Store
+**/*.swp
 /.sass-cache
 /connect.lock
 /coverage/*

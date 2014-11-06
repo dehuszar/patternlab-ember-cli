@@ -8,10 +8,10 @@ var Router = Ember.Router.extend({
 Router.map(function() {
 
     // ATOMS
-    this.resource("atoms", function() {
+    this.route("atoms", function() {
 
         // Global Atoms
-        this.resource("atoms.global", function() {
+        this.route("global", function() {
             this.route("colors");
             this.route("fonts");
             this.route("animations");
@@ -19,7 +19,7 @@ Router.map(function() {
         });
 
         // Text Atoms
-        this.resource("atoms.text", function() {
+        this.route("text", function() {
             this.route("headings");
             this.route("paragraph");
             this.route("blockquote");
@@ -30,14 +30,14 @@ Router.map(function() {
         });
 
         // List Atoms
-        this.resource("atoms.lists", function() {
+        this.route("lists", function() {
             this.route("unordered");
             this.route("ordered");
             this.route("definition");
         });
 
         // Image Atoms
-        this.resource("atoms.images", function() {
+        this.route("images", function() {
             this.route("logo");
             this.route("landscape4x3");
             this.route("landscape16x9");
@@ -49,7 +49,7 @@ Router.map(function() {
         });
         
         // Form Atoms
-        this.resource("atoms.forms", function() {
+        this.route("forms", function() {
             this.route("text-fields");
             this.route("select-menu");
             this.route("checkbox");
@@ -65,10 +65,10 @@ Router.map(function() {
     });
 
     // MOLECULES
-    this.resource("molecules", function() {
+    this.route("molecules", function() {
 
         // Text Molecules
-        this.resource("molecules.text", function() {
+        this.route("text", function() {
             this.route("byline");
             this.route("address");
             this.route("heading-group");
@@ -77,7 +77,7 @@ Router.map(function() {
         });
 
         // Layout Molecules
-        this.resource("molecules.layouts", function() {
+        this.route("layouts", function() {
             this.route("one-up");
             this.route("two-up");
             this.route("three-up");
@@ -85,7 +85,7 @@ Router.map(function() {
         });
 
         // Block Molecules
-        this.resource("molecules.blocks", function() {
+        this.route("blocks", function() {
             this.route("media");
             this.route("headline-byline");
             this.route("hero");
@@ -95,19 +95,19 @@ Router.map(function() {
         });
 
         // Media Molecules
-        this.resource("molecules.media", function() {
+        this.route("media", function() {
             this.route("figure-with-caption");
         });
 
         // Form Molecules
-        this.resource("molecules.forms", function() {
+        this.route("forms", function() {
             this.route("search");
             this.route("comment-form");
             this.route("newsletter");
         });
 
         // Navigation Molecules
-        this.resource("molecules.navigation", function() {
+        this.route("navigation", function() {
             this.route("primary");
             this.route("footer");
             this.route("breadcrumbs");
@@ -116,38 +116,38 @@ Router.map(function() {
         });
 
         // Components Molecules
-        this.resource("molecules.components", function() {
+        this.route("components", function() {
             this.route("social-share");
             this.route("accordion");
             this.route("single-comment");
         });
 
         // Messaging Molecules
-        this.resource("molecules.messaging", function() {
+        this.route("messaging", function() {
             this.route("alert");
         });
     });
 
     // ORGANISMS
-    this.resource("organisms", function() {
+    this.route("organisms", function() {
         // Global Organisms
-        this.resource("organisms.global", function() {
+        this.route("global", function() {
             this.route("header");
             this.route("footer");
         });
 
         // Article Organisms
-        this.resource("organisms.article", function() {
+        this.route("article", function() {
             this.route("body");
         });
 
         // Comment Organisms
-        this.resource("organisms.comments", function() {
+        this.route("comments", function() {
             this.route("thread");
         });
 
         // Section Organisms
-        this.resource("organisms.sections", function() {
+        this.route("sections", function() {
             this.route("latest-posts"); 
             this.route("recent-tweets"); 
             this.route("related-posts"); 
@@ -155,14 +155,14 @@ Router.map(function() {
     });
 
     // TEMPLATES
-    this.resource("templates", function() {
+    this.route("templates", function() {
         this.route("homepage");
         this.route("blog");
         this.route("article");
     });
 
     // PAGES
-    this.resource("pages", function() {
+    this.route("pages", function() {
         this.route("homepage");
         this.route("homepage-emergency");
         this.route("blog");
