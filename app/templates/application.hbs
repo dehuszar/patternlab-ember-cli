@@ -1,9 +1,16 @@
 <header class="sg-header" role="banner">
     <a href="#sg-nav-container" class="sg-nav-toggle"><span class="icon-menu"></span>Menu</a>
     <div class="sg-nav-container" id="sg-nav-container">
-        {{pattern-nav}}
-        {{ish-controls}}
+        {{style-guide/pattern-nav}}
+        {{style-guide/ish-controls}}
     </div>
 </header>
 
-{{outlet}}
+<div id="sg-vp-wrap">
+    <div id="sg-cover" style="display: none;"></div>
+    <div id="sg-gen-container" style="width: 1600px;">
+        <div id="sg-viewport">
+            {{outlet}}
+        </div>
+    </div>
+</div>

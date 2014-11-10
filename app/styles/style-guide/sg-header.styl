@@ -8,14 +8,15 @@
 	background: $sg-primary;
 	color: $sg-quaternary;
 	font-family: $sg-font;
-	text-transform: uppercase;
-	position: fixed;
-	top: 0;
+    height: 2.2em;
 	left: 0;
-	z-index: 2;
+	position: fixed;
+	text-transform: uppercase;
+	top: 0;
 	width: 100%;
+	z-index: 2;
 
-	> * {
+	& * {
         box-sizing: border-box;
 	}
 	
@@ -45,7 +46,7 @@
 		}
 	}
 
-	ol ol ol a { //3rd level nav item
+	ul ul ul a { //3rd level nav item
 		padding-left: 2em;
 		text-transform: none;
     }
@@ -98,7 +99,7 @@
 			float: left;
 			position: relative;
 			
-			> ol {
+			> ul {
 				position: absolute;
 				top: $offset-top;
 				left: 0;
