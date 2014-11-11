@@ -58,10 +58,14 @@ Router.map(function() {
         });
 
         // Button Atoms
-        this.route("buttons");
+        this.route("buttons", function() {
+            this.route("buttons");
+        });
 
         // Table Atoms
-        this.route("tables");
+        this.route("tables", function() {
+            this.route("table");
+        });
     });
 
     // MOLECULES
@@ -77,7 +81,7 @@ Router.map(function() {
         });
 
         // Layout Molecules
-        this.route("layouts", function() {
+        this.route("layout", function() {
             this.route("one-up");
             this.route("two-up");
             this.route("three-up");
