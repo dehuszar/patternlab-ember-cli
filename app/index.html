@@ -10,12 +10,17 @@
     {{content-for 'head'}}
 
     <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/style-guide/styleguide.css">
     <link rel="stylesheet" href="assets/patternlab-ember-cli.css">
+
+    {{content-for 'head-footer'}}
   </head>
   <body>
     {{content-for 'body'}}
 
     <script src="assets/vendor.js"></script>
     <script src="assets/patternlab-ember-cli.js"></script>
+
+    {{content-for 'body-footer'}}
   </body>
 </html>
