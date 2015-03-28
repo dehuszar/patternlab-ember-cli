@@ -1,0 +1,153 @@
+.atoms-global-colors {
+    padding: 0;
+
+    li {
+        display: inline-block;
+        font-weight: 300;
+        text-align: center;
+        vertical-align: top;
+        width: 5em;
+
+        + li {
+            margin-left: 0.25em;
+        }
+
+        .swatch {
+            display: block;
+            height: 5em;
+            width: 100%;
+        }
+            
+        .label {
+            font-size: 0.75em;
+            margin-top: 0.25em;
+        }
+
+        &.primary {
+            .swatch {
+                background: @primary;
+            }
+
+            .label {
+                display: block;
+
+                &:before {
+                    content: "Primary";
+                }
+            }
+        }
+
+        &.primary-md {
+            .swatch {
+                background: @primary-md;
+            }
+
+            .label {
+                display: block;
+
+                &:before {
+                    content: "Primary Medium";
+                }
+            }
+        }
+
+        &.primary-lt {
+            .swatch {
+                background: @primary-lt;
+            }
+
+            .label {
+                display: block;
+
+                &:before {
+                    content: "Primary Light";
+                }
+            }
+        }
+
+        &.secondary {
+            .swatch {
+                background: @secondary;
+            }
+
+            .label {
+                display: block;
+
+                &:before {
+                    content: "Secondary";
+                }
+            }
+        }
+
+        &.secondary-md {
+            .swatch {
+                background: @secondary-md;
+            }
+
+            .label {
+                display: block;
+
+                &:before {
+                    content: "Secondary Medium";
+                }
+            }
+        }
+
+        &.secondary-lt {
+            .swatch {
+                background: @secondary-lt;
+            }
+
+            .label {
+                display: block;
+
+                &:before {
+                    content: "Secondary Light";
+                }
+            }
+        }
+
+        &.tertiary {
+            .swatch {
+                background: @tertiary;
+            }
+
+            .label {
+                display: block;
+
+                &:before {
+                    content: "Tertiary";
+                }
+            }
+        }
+
+        &.tertiary-md {
+            .swatch {
+                background: @tertiary-md;
+            }
+
+            .label {
+                display: block;
+
+                &:before {
+                    content: "Tertiary Medium";
+                }
+            }
+        }
+
+        &.tertiary-lt {
+            .swatch {
+                background: @tertiary-lt;
+            }
+
+            .label {
+                display: block;
+
+                &:before {
+                    content: "Tertiary Light";
+                }
+            }
+        }
+    }
+}
+

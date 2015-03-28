@@ -1,0 +1,19 @@
+/* Presumes a markup structure of:
+    <form>
+        <fieldset>
+            <div class="field-container">
+                <label for="text"></label>
+                <input id="text" type="text" placeholder="">
+            </div>
+        </fieldset>
+    </form>
+ */ 
+
+.aligned-form:extend(.pure-form all, .pure-form-aligned all) {
+    fieldset:extend(.pure-form fieldset all) {}
+
+    .field-container:extend(.pure-form-aligned .pure-control-group all) {
+        
+        label:extend(.pure-form-aligned .pure-control-group label all) {}
+    }
+}

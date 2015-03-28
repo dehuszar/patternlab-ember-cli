@@ -1,0 +1,45 @@
+@import (reference) 'variables';
+@import 'pure/base';
+@import (reference) 'pure/grids';
+@import (reference) 'pure/grids-responsive';
+@import (reference) 'pure/buttons';
+@import (reference) 'pure/forms';
+@import (reference) 'pure/menus';
+@import (reference) 'pure/menus-paginator';
+@import (reference) 'pure/tables';
+@import (reference) 'lesshat';
+@import (reference) 'mixins';
+
+.application {
+    // font-family: "superclarendon-1","superclarendon-2";
+    font-family: @primary-font;
+}
+
+#sg-viewport > * {
+    text-align: left;
+}
+
+#sg-viewport * + * {
+    margin-top: 1em;
+}
+
+// Add pure imports below
+// @import (reference) 'atoms/global';
+@import 'atoms/global';
+@import 'atoms/text';
+@import 'atoms/lists';
+@import 'atoms/images';
+@import 'atoms/forms';
+@import 'atoms/buttons';
+@import 'atoms/tables';
+
+@import 'molecules/text';
+@import 'molecules/layout';
+@import 'molecules/blocks';
+@import 'molecules/headline-byline';
+@import 'molecules/media';
+@import 'molecules/forms';
+
+.molecules-layout .gi {
+    text-align: center;
+}
